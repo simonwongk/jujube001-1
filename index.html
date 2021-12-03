@@ -5,7 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>001 header exercise</title>
 	<link rel="stylesheet" href="./styles.css">
+	<style type="text/css">
+		img {
+			position: absolute;
+			transform: translate(300%, 5%);
+		}
+		.text {
+			text-align: center;
+			font-size: 10px;
+			font-family: "D-DIN";
+			transform: translate(0%, 250%);
+		}
+		.text::before {
+			content: url(./img/logo_leftDec.png);
+			margin-right: 20px;
+		}
+		.text::after {
+			content: url(./img/logo_rightDec.png);
+			margin-left: 20px;
+		}
+	</style>
 </head>
 <body>
+	<img src="./img/logo_eet.svg">
+	<div class="text">TRUTH AND TRADITION</div>
 </body>
 </html>
